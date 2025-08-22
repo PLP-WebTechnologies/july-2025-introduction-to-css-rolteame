@@ -9,6 +9,10 @@ header {
   font-size: 16px;
   padding: 10px 0;
 }
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
 .nav-links a {
   margin-right: 15px;
   float: right;
@@ -16,7 +20,7 @@ header {
   color: #007acc;
 }
 h2 {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 30px;
 }
 .contact-form {
@@ -26,8 +30,8 @@ h2 {
   font-weight: bold;
 }
 .contact-form input {
-  width: 200px;
-  padding: 5px;
+  width: 40%;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin-bottom: 10px;
