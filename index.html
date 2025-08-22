@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>PLP HTML/CSS Assignment Week 3</title>
+</head>
+<body>
+  <!-- Use semantic header for site identity and navigation -->
+  <header>
+    <h1>My Accessible Website</h1>
+    <nav aria-label="Main navigation" class="nav-links">
+      <a href="#content">Skip to Content</a> <!-- Skip link improves keyboard accessibility -->
+      <a href="#about">About</a>
+      <a href="#articles">Articles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main landmark makes content easier to navigate with screen readers -->
+  <main id="content">
+    <article>
+      <h2 id="about">About This Page</h2>
+      <p>This is a demo page to show how semantic HTML and accessibility features can make content more usable for everyone.</p>
+      
+      <h2 id="articles">Sample Article</h2>
+      <p>Semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> give meaning to your structure beyond visual layout.</p>
+      
+      <!-- Use descriptive alt text for images -->
+      <figure>
+        <img src="./assets/food-3874961_1280.jpg" alt="simple image" class="img"/>
+        <figcaption>A decorative example image with meaningful alt text.</figcaption>
+      </figure>
+      
+      <h2 id="contact">Contact</h2>
+      <form aria-label="Contact form" class="contact-form">
+        <label for="name">Full Name</label><br />
+        <input type="text" id="name" name="name" required aria-required="true"><br /><br />
+        
+        <label for="email">Email Address</label><br />
+        <input type="email" id="email" name="email" required aria-required="true"><br /><br />
+        
+        <button type="submit">Submit</button>
+      </form>
+    </article>
+  </main>
+
+  <!-- Footer landmark -->
+  <footer>
+    <p>&copy; 2025 My Accessible Website. Built with ❤️ and semantic HTML.</p>
+  </footer>
+</body>
+</html>
